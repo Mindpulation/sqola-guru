@@ -19,8 +19,8 @@ const loginHandle = async (req, res) => {
   (ress === null) ? res.send(false) : res.send(ress);
 }
 
-const signupHandle = async (req, res) => {
-  const param = generateRoom(req.body);
+const signupHandle = async (req, res) => {  
+  const param = generateRoom(req.body);  
   const data = await save(con, param);  
   res.send(data);              
 }
