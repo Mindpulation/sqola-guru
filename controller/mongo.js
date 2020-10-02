@@ -15,7 +15,7 @@ let con;
 })();
 
 const loginHandle = async (req, res) => {
-  const ress = await findOne(con, req.body;  
+  const ress = await findOne(con, req.body);  
   (ress === null) ? res.send(false) : res.send(ress);
 }
 
