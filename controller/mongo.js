@@ -16,8 +16,13 @@ let con;
 })();
 
 const loginHandle = async (req, res) => {
-  const ress = await findOne(con, req.body);
+  const data = req.body;
+  const ress = await findOne(con, data);
+
   console.log(ress);
+
+
+  
 }
 
 const signupHandle = async (req, res) => {
